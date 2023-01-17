@@ -8,12 +8,19 @@
 function displayDoc() {
     var doc = document.getElementById("googleDoc");
     doc.style.display = "block";
+    var displayButton = document.getElementById("displayButton");
+    displayButton.style.display = "none";
+    var hideButton = document.getElementById("hideButton");
+    hideButton.style.display = "block";
 }
 
-function popOutPDF() {
+function hideDoc() {
     var doc = document.getElementById("googleDoc");
     doc.style.display = "none";
-    window.open(doc.src + "&export=download");
+    var displayButton = document.getElementById("displayButton");
+    displayButton.style.display = "block";
+    var hideButton = document.getElementById("hideButton");
+    hideButton.style.display = "none";
 }
 </script>	  
 	  
@@ -122,10 +129,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	 
 	 <body>
 
+
 <iframe id="googleDoc" src="https://docs.google.com/document/d/1vgZJ2W8WYx8o9VV0DtTkbrwzCFs0RaAg/edit?usp=sharing&ouid=103339882366375360616&rtpof=true&sd=true" style="display:none;" width="800" height="600"></iframe>
 
-<button onclick="displayDoc()">Display Resume</button>
-<button onclick="popOutPDF()">Pop Out Resume in New Window</button>
+<button id="displayButton" onclick="displayDoc()">Display Doc</button>
+<button id="hideButton" onclick="hideDoc()" style="display:none;">Hide Doc</button>
 
 </body>
 	 
