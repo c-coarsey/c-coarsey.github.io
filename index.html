@@ -1,158 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+    <!-- Basic Page Needs ================================================== -->
+    <meta charset="utf-8">
+    <title>Home | Chad T. Coarsey</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Home | Chad T. Coarsey</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <!-- Mobile Specific Metas ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="/assets/default.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/media-queries.css">
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="/assets/default.css">
-	<link rel="stylesheet" href="/assets/main.css">
-   <link rel="stylesheet" href="/assets/media-queries.css">
+    <!-- Script ================================================== -->
+    <!-- <script src="js/modernizr.js"></script> -->
 
-   <!-- Script
-   ================================================== -->
-	<!-- <script src="js/modernizr.js"></script> -->
+    <link rel="shortcut icon" href="/assets/favicon.png">
+</head>
 
-	<link rel="shortcut icon" href="/assets/favicon.png" >
-
-
-  <body>
-
+<body>
     <!-- Header -->
-<nav id="nav-wrap" class = "opaque">
+    <nav id="nav-wrap" class="opaque">
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-   <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-   <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-   <ul id="nav" class="nav">
-   	<!--
-	Explanation: Each main page grouping is assigned a navgroup.
-	Each navgroup has a main page link (such as blog.html for the blog group)
-	In the front matter, the group is called a "navgroup"
-	To get one of the navbar items to light up for a page, make sure that the
-	front matter for that page contains the right navgroup
-   	-->
-
-
-
-
-			<li class="current">
-	            <a href="/index.html">Home</a>
+        <ul id="nav" class="nav">
+            <li class="current">
+                <a href="/index.html">Home</a>
             </li>
 
-
-
-			<li class="">
-	            <a href="/about.html">About</a>
+            <li class="">
+                <a href="/about.html">About</a>
             </li>
 
-
-			<li class="">
-	            <a href="/resume.html">Resume</a>
+            <li class="">
+                <a href="/resume.html">Resume</a>
             </li>
 
-
-			<li class="">
-	            <a href="/Projects.html">Projects</a>
+            <li class="">
+                <a href="/Projects.html">Projects</a>
             </li>
+        </ul>
+    </nav>
 
-     
-   </ul>
+    <main class="content" aria-label="Content">
+        <div class="wrapper">
+            <!-- Page Body -->
+            <article class="page">
+                <div class="page-content">
+                    <div class="section-lr-header">
+                        <center>
+                            <img src="/assets/hello.png" class="welcome-img" alt="Hello" />
+                        </center>
+                    </div>
+                </div>
+            </article>
+            <!-- End Page Body -->
+        </div>
 
-</nav>
-<main class="content" aria-label="Content">
-      <div class="wrapper">
-<div class = "section-lr">
-	</div>
-        <!-- Page Body -->
+        <div class="section-lr-content">
+            <h3>I'm Chad Coarsey</h3>
+            <p>This is my personal blog and professional profile.</p>
+            <p>I'm a microbiologist-trained bioengineer with a passion for clinical diagnostics development and biomedical engineering applications.</p>
+            <p>What am I interested in? See the graph!</p>
+        </div>
 
-<article class = "page">
-   <div class = "page-content">
-      <div class = "section-lr">
-	<div class = "section-lr-header">
-		<center>
-		<img src="/assets/hello.png" class = "welcome-img" alt="Hello" />
-			</center>
+        <!-- TODO: Fix this dirty one-off on the homepage. Make generic blog img style-->
+        <img src="/assets/interest.png" style="display: block; max-height: 500px; max-width: 500px; width: 100%; margin-left: auto; margin-right: auto;">
 
-</article>
-<!-- End Page Body -->
-      </div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="fb-like" data-href="https://www.facebook.com/BionicGlove/" data-width="80" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/chad-coarsey-43694196" data-format="hover" data-related="false" data-text="Chad Coarsey"></script>
     </main>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- footer ================================================== -->
+    <footer>
+        <div class="footer-bio">
+            <p>
+                Chad Coarsey is a Bioengineer and (Dis)ability advocate based in Florida. He can be reached via email at [c] [dot] [coarsey][at] aol [dot] com.
+            </p>
+        </div>
+    </footer>
 
-</html>
-
-	</div>
-	<div class = "section-lr-content">
-		<h3>I'm Chad Coarsey</h3>
-		<p> This is my personal blog and professional profile.</p>
-		<p> I'm a microbiologist-trained bioengineer with a passion for clinical diagnostics development and biomedical engineering applications.</p>
-		<p> What am I interested in? See the graph!</p>
-
-	    </div>
-</div>
-<!-- TODO: Fix this dirty one-off on the homepage. Make generic blog img style-->
-<img src="/assets/interest.png" style = "
-	display: block;
-	max-height: 500px;
-	max-width: 500px;
-	width: 100%;
-	margin-left:auto;
-	margin-right:auto;
-	">
-
-   </div>
-		<div class="fb-like" data-href="https://www.facebook.com/BionicGlove/" data-width="80" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-	 	<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-	      	<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/chad-coarsey-43694196" data-format="hover" data-related="false" data-text="Chad Coarsey"></script>
-
-
-
-
-</article>
-<!-- End Page Body -->
-      </div>
-    </main>
-
-    <!-- footer
-================================================== -->
-<footer>
-  <div class="footer-bio">
-     <p>
-        Chad Coarsey is a Bioengineer and (Dis)ability advocate based in Florida. He can be reached via email at [c] [dot] [coarsey][at] aol [dot] com.
-     </p>
-
-  </div>
-</footer>
-
-<!-- Java Script
-================================================== -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-<script type="text/javascript" src="/assets/jquery-migrate-1.2.1.min.js"></script>
-<script src="/assets/waypoints.js"></script>
-
-
-
-  </body>
+    <!-- Java Script ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="/assets/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/assets/waypoints.js"></script>
+</body>
 
 </html>
